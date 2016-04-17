@@ -1,190 +1,71 @@
-/*--------- Base styles --------------*/
-
-* {
-	box-sizing: border-box;
-	padding: 0px;
-	margin: 0px;
-}
-
 body {
-	background-color: floralwhite;
-	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-	font-size: 16px;
+  font-size: 16px;
+  color: #555;
+  background-color: #fff;
+  font-family: 'Offside', sans-serif;
 }
 
-h1 {
-	font-weight: 900;
-	font-size: 1.75em;
-	text-align: center;
-	margin-top: 30px;
-	margin-bottom: 30px;
+body p {
+  font-family: 'Poly', serif;
 }
 
-h2 {
-	background: url('../green.png');
-	position: absolute;
-	top:0;
-	right: 0;
-	border: 1px solid black;
-	font-weight: 700;
-	padding: 3px 20px;
-	font-size: 1.25em;
-	color: white;
-	/*width: 150px;*/
+/* HEADER */
+#header-nav {
+  background-color: #3CA2A2;
 }
 
-section {
-	position: relative;
-	background-color: #ECECE0;
+.navbar-brand h1 {
+  color: #FFF;
+  font-weight: 700;
+  font-size: 1.2em;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
 }
 
-p {
-	border: 1px solid black;
-	padding: 50px 15px 10px 15px;
-	height: 240px;
-	overflow-y: hidden;
-	font-weight: 400;
+.navbar-brand h1:hover {
+  color: #474843;
+  -webkit-transition: ease 0.5s;
+          transition: ease 0.5s;
 }
 
-.row {
-	width: 100%;
+#nav-list {
+  margin-top: 10px;
 }
 
-
-.row > div {
-    padding: 12px;
+#nav-list a {
+  color: #fff;
+  text-align: center;
 }
 
-
-
-
-
-/********** Large devices only **********/
-@media (min-width: 992px) {
-  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
-    float: left;
-  }
-  .col-lg-1 {
-    width: 8.33%;
-  }
-  .col-lg-2 {
-    width: 16.66%;
-  }
-  .col-lg-3 {
-    width: 25%;
-  }
-  .col-lg-4 {
-    width: 33.33%;
-  }
-  .col-lg-5 {
-    width: 41.66%;
-  }
-  .col-lg-6 {
-    width: 50%;
-  }
-  .col-lg-7 {
-    width: 58.33%;
-  }
-  .col-lg-8 {
-    width: 66.66%;
-  }
-  .col-lg-9 {
-    width: 74.99%;
-  }
-  .col-lg-10 {
-    width: 83.33%;
-  }
-  .col-lg-11 {
-    width: 91.66%;
-  }
-  .col-lg-12 {
-    width: 100%;
-  }
+#nav-list a:hover {
+  background: #474843;
 }
 
-/********** Medium devices only **********/
-@media (min-width: 768px) and (max-width: 992px) {
-  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
-    float: left;
-  }
-  .col-md-1 {
-    width: 8.33%;
-  }
-  .col-md-2 {
-    width: 16.66%;
-  }
-  .col-md-3 {
-    width: 25%;
-  }
-  .col-md-4 {
-    width: 33.33%;
-  }
-  .col-md-5 {
-    width: 41.66%;
-  }
-  .col-md-6 {
-    width: 50%;
-  }
-  .col-md-7 {
-    width: 58.33%;
-  }
-  .col-md-8 {
-    width: 66.66%;
-  }
-  .col-md-9 {
-    width: 74.99%;
-  }
-  .col-md-10 {
-    width: 83.33%;
-  }
-  .col-md-11 {
-    width: 91.66%;
-  }
-  .col-md-12 {
-    width: 100%;
-  }
+/* END HEADER */
+#main-content h1 {
+  font-weight: 900;
+  margin-bottom: 40px;
 }
 
+#main-text {
+  background-color: #555;
+  color: #fff;
+}
 
-/********** mobile devices only **********/
+#main-text h2 {
+  padding-bottom: 10px;
+}
+
+/*********** Large devices only ***********/
+/*********** Medium devices only ***********/
+/*********** Small devices only ***********/
+/*********** Extra small devices only ***********/
 @media (max-width: 767px) {
-  .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
-    float: left;
-  }
-  .col-sm-1 {
-    width: 8.33%;
-  }
-  .col-sm-2 {
-    width: 16.66%;
-  }
-  .col-sm-3 {
-    width: 25%;
-  }
-  .col-sm-4 {
-    width: 33.33%;
-  }
-  .col-sm-5 {
-    width: 41.66%;
-  }
-  .col-sm-6 {
-    width: 50%;
-  }
-  .col-sm-7 {
-    width: 58.33%;
-  }
-  .col-sm-8 {
-    width: 66.66%;
-  }
-  .col-sm-9 {
-    width: 74.99%;
-  }
-  .col-sm-10 {
-    width: 83.33%;
-  }
-  .col-sm-11 {
-    width: 91.66%;
-  }
-  .col-sm-12 {
-    width: 100%;
+  #main-content {
+    width: 80%;
   }
 }
+
+/*********** SUPER Extra small devices only IPHONE4 ***********/
